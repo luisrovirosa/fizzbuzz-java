@@ -49,16 +49,17 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void five_is_buzz(){
+    public void five_is_buzz() {
         assertExpectedValue("Buzz", 5);
     }
 
     @Test
-    public void ten_is_buzz(){
+    public void ten_is_buzz() {
         assertExpectedValue("Buzz", 10);
     }
+
     @Test
-    public void twenty_is_buzz(){
+    public void twenty_is_buzz() {
         assertExpectedValue("Buzz", 20);
     }
 
