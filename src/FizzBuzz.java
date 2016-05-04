@@ -1,5 +1,5 @@
 public class FizzBuzz {
-    
+
     public String[] values() {
         String[] values = new String[100];
         for (int i = 0; i < 100; i++) {
@@ -27,10 +27,14 @@ public class FizzBuzz {
     }
 
     private boolean isBuzz(int number) {
-        return number % 5 == 0;
+        return isMultiple(number, 5);
     }
 
     private boolean isFizz(int number) {
-        return number % 3 == 0;
+        return isMultiple(number, 3);
+    }
+
+    private boolean isMultiple(int number, int multipleOf) {
+        return number % multipleOf == 0;
     }
 }
