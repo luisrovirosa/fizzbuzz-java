@@ -40,7 +40,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void fifteen_is_fizzbuzz() {
+    public void numbers_divisible_by_three_and_five_are_fizzbuzz() {
         assertIsFizzBuzz(15);
     }
 
