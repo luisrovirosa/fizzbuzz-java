@@ -15,4 +15,9 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("1", fizzBuzz.values()[0]);
     }
+    @Test
+    public void two_is_two(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("2", fizzBuzz.values()[1]);
+    }
 }
