@@ -3,15 +3,17 @@ public class FizzBuzz {
         String[] values = new String[100];
         for (int i = 0; i < 100; i++) {
             int number = i + 1;
+            String value;
             if (isFizz(number) && isBuzz(number)) {
-                values[i] = "FizzBuzz";
+                value = "FizzBuzz";
             } else if (isFizz(number)) {
-                values[i] = "Fizz";
+                value = "Fizz";
             } else if (isBuzz(number)) {
-                values[i] = "Buzz";
+                value = "Buzz";
             } else {
-                values[i] = String.valueOf(number);
+                value = String.valueOf(number);
             }
+            values[i] = value;
         }
         return values;
     }
