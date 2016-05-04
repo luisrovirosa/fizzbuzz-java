@@ -26,17 +26,9 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void three_is_fizz() {
+    public void numbers_divisible_by_three_but_not_by_five_are_fizz() {
         assertIsFizz(3);
-    }
-
-    @Test
-    public void six_is_fizz() {
         assertIsFizz(6);
-    }
-
-    @Test
-    public void nine_is_fizz() {
         assertIsFizz(9);
     }
 
