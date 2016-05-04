@@ -50,17 +50,17 @@ public class FizzBuzzTest {
 
     @Test
     public void five_is_buzz() {
-        assertExpectedValue("Buzz", 5);
+        assertIsBuzz(5);
     }
 
     @Test
     public void ten_is_buzz() {
-        assertExpectedValue("Buzz", 10);
+        assertIsBuzz(10);
     }
 
     @Test
     public void twenty_is_buzz() {
-        assertExpectedValue("Buzz", 20);
+        assertIsBuzz(20);
     }
 
     @Test
@@ -74,6 +74,10 @@ public class FizzBuzzTest {
 
     private void assertIsFizz(int number) {
         assertExpectedValue("Fizz", number);
+    }
+
+    private void assertIsBuzz(int number) {
+        assertExpectedValue("Buzz", number);
     }
 
     private void assertExpectedValue(String expected, int number) {
