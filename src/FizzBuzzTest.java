@@ -19,17 +19,9 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void one_is_one() {
+    public void basic_values_are_the_number_as_string() {
         assertSameValue(1);
-    }
-
-    @Test
-    public void two_is_two() {
         assertSameValue(2);
-    }
-
-    @Test
-    public void four_is_four() {
         assertSameValue(4);
     }
 
