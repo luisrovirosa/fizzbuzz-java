@@ -27,6 +27,11 @@ public class FizzBuzzTest {
         assertSameValue(2);
     }
 
+    @Test
+    public void four_is_four(){
+        assertSameValue(4);
+    }
+
     private void assertSameValue(int number){
         assertEquals(String.valueOf(number), values[number - 1]);
     }
