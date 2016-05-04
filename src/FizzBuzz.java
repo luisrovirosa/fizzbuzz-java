@@ -1,4 +1,5 @@
 public class FizzBuzz {
+    
     public String[] values() {
         String[] values = new String[100];
         for (int i = 0; i < 100; i++) {
@@ -9,7 +10,7 @@ public class FizzBuzz {
 
     private String value(int number) {
         String value;
-        if (isFizz(number) && isBuzz(number)) {
+        if (isFizzBuzz(number)) {
             value = "FizzBuzz";
         } else if (isFizz(number)) {
             value = "Fizz";
@@ -19,6 +20,10 @@ public class FizzBuzz {
             value = String.valueOf(number);
         }
         return value;
+    }
+
+    private boolean isFizzBuzz(int number) {
+        return isFizz(number) && isBuzz(number);
     }
 
     private boolean isBuzz(int number) {
