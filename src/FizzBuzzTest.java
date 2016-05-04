@@ -63,6 +63,11 @@ public class FizzBuzzTest {
         assertExpectedValue("Buzz", 20);
     }
 
+    @Test
+    public void fifteen_is_fizzbuzz() {
+        assertExpectedValue("FizzBuzz", 15);
+    }
+
     private void assertSameValue(int number) {
         assertExpectedValue(String.valueOf(number), number);
     }

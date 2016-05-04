@@ -3,9 +3,11 @@ public class FizzBuzz {
         String[] values = new String[100];
         for (int i = 0; i < 100; i++) {
             int number = i + 1;
-            if (isFizz(number)) {
+            if (isFizz(number) && isBuzz(number)) {
+                values[i] = "FizzBuzz";
+            } else if (isFizz(number)) {
                 values[i] = "Fizz";
-            } else if(isBuzz(number)){
+            } else if (isBuzz(number)) {
                 values[i] = "Buzz";
             } else {
                 values[i] = String.valueOf(number);
