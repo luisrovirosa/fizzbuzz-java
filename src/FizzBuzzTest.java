@@ -65,7 +65,7 @@ public class FizzBuzzTest {
 
     @Test
     public void fifteen_is_fizzbuzz() {
-        assertExpectedValue("FizzBuzz", 15);
+        assertIsFizzBuzz(15);
     }
 
     private void assertSameValue(int number) {
@@ -78,6 +78,10 @@ public class FizzBuzzTest {
 
     private void assertIsBuzz(int number) {
         assertExpectedValue("Buzz", number);
+    }
+
+    private void assertIsFizzBuzz(int number) {
+        assertExpectedValue("FizzBuzz", number);
     }
 
     private void assertExpectedValue(String expected, int number) {
