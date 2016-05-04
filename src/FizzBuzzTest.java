@@ -33,17 +33,9 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void five_is_buzz() {
+    public void numbers_divisible_by_five_but_not_by_three_are_buzz() {
         assertIsBuzz(5);
-    }
-
-    @Test
-    public void ten_is_buzz() {
         assertIsBuzz(10);
-    }
-
-    @Test
-    public void twenty_is_buzz() {
         assertIsBuzz(20);
     }
 
