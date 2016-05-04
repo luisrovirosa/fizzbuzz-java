@@ -5,24 +5,25 @@ import static org.junit.Assert.*;
 
 public class FizzBuzzTest {
 
-    private FizzBuzz fizzBuzz;
+    private String[] values;
 
     @Before
     public void setUp(){
-        fizzBuzz = new FizzBuzz();
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        values = fizzBuzz.values();
     }
 
     @Test
     public void should_contains_one_hundred_elements(){
-        assertEquals(100, fizzBuzz.values().length);
+        assertEquals(100, values.length);
     }
 
     @Test
     public void one_is_one(){
-        assertEquals("1", fizzBuzz.values()[0]);
+        assertEquals("1", values[0]);
     }
     @Test
     public void two_is_two(){
-        assertEquals("2", fizzBuzz.values()[1]);
+        assertEquals("2", values[1]);
     }
 }
