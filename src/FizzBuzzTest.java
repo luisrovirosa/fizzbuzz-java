@@ -32,6 +32,13 @@ public class FizzBuzzTest {
         assertSameValue(4);
     }
 
+    @Test
+    public void three_is_fizz(){
+        assertEquals("Fizz", values[2]);
+    }
+
+
+
     private void assertSameValue(int number){
         assertEquals(String.valueOf(number), values[number - 1]);
     }
