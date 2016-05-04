@@ -49,11 +49,14 @@ public class FizzBuzzTest {
     }
 
     private void assertSameValue(int number) {
-        assertEquals(String.valueOf(number), values[number - 1]);
+        assertExpectedValue(String.valueOf(number), number);
     }
 
-
     private void assertIsFizz(int number) {
-        assertEquals("Fizz", values[number - 1]);
+        assertExpectedValue("Fizz", number);
+    }
+
+    private void assertExpectedValue(String expected, int number) {
+        assertEquals(expected, values[number - 1]);
     }
 }
