@@ -9,4 +9,10 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals(100, fizzBuzz.values().length);
     }
+
+    @Test
+    public void one_is_one(){
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("1", fizzBuzz.values()[0]);
+    }
 }

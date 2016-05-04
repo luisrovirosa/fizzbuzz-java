@@ -1,5 +1,7 @@
 public class FizzBuzz {
     public String[] values() {
-        return new String[100];
+        String[] values = new String[100];
+        values[0] = "1";
+        return values;
     }
 }
