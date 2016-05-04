@@ -20,10 +20,14 @@ public class FizzBuzzTest {
 
     @Test
     public void one_is_one(){
-        assertEquals("1", values[0]);
+        assertSameValue(0);
     }
     @Test
     public void two_is_two(){
-        assertEquals("2", values[1]);
+        assertSameValue(1);
+    }
+
+    private void assertSameValue(int number){
+        assertEquals(String.valueOf(number + 1), values[number]);
     }
 }
