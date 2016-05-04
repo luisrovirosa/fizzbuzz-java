@@ -35,21 +35,25 @@ public class FizzBuzzTest {
 
     @Test
     public void three_is_fizz() {
-        assertEquals("Fizz", values[2]);
+        assertIsFizz(3);
     }
 
     @Test
     public void six_is_fizz() {
-        assertEquals("Fizz", values[5]);
+        assertIsFizz(6);
     }
 
     @Test
     public void nine_is_fizz() {
-        assertEquals("Fizz", values[8]);
+        assertIsFizz(9);
     }
-
 
     private void assertSameValue(int number) {
         assertEquals(String.valueOf(number), values[number - 1]);
+    }
+
+
+    private void assertIsFizz(int number) {
+        assertEquals("Fizz", values[number - 1]);
     }
 }
